@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Задание № 1 Земцов Антон 21/2</title>
+    <meta charset="UTF-8" />
+  </head>
+
+
+
+  <body>
+    <h1>Задание № 1 Земцов Антон 21/2</h1>
+    <ul>
+      <li>
+        <a href="http://kubsu.ru">
+          Абсолютная гиперссылка на главную страницу сайта kubsu.ru
+        </a>
+      </li>
+      <li>
+        <a href="https://kubsu.ru">
+          Абсолютная гиперссылка на главную сайта kubsu.ru в протоколе https
+        </a>
+      </li>
+      <li>
+        <a href="https://kubsu.ru">
+          <img
+            src="https://avatars.mds.yandex.net/i?id=8b25546781ae3c214d2422f8e1a9763bf75040bd-4120868-images-thumbs&n=13"
+            alt="Ссылка-изображение"
+            width="350"
+            height="350"
+          />
+        </a>
+      </li>
+      <li>
+        <a href="index.html" id="re"> Сокращенная ссылка на внутреннюю страницу</a>
+      </li>
+      <li><a href="/"> Сокращённая ссылка на главную страницу </a></li>
+      <li><a href="#a1"> Ссылка на фрагмент текущей страницы </a></li>
+      <li>
+        <a href="/index?size=m?color=black?page=1">
+          Ссылка с тремя параметрами в URL
+        </a>
+      </li>
+      <li><a href="./index1.html"> Ссылка с параметром id в URL </a></li>
+      <li>
+        <a href="./index.html">
+          Относительная ссылка на страницу в текущем каталоге
+        </a>
+      </li>
+      <li>
+        <a href="/about/aboutus.html">
+          Относительная ссылка на страницу в каталоге about
+        </a>
+      </li>
+      <li>
+        <a href="../index.html">
+          Относительная ссылка на страницу в каталоге уровнем выше текущего
+        </a>
+      </li>
+      <li>
+        <a href="../../index.html">
+          Относительная ссылка на страницу в каталоге двумя уровнями выше
+        </a>
+      </li>
+      <li><a href="#"> Контекстная ссылка </a> в тексте абзаца</li>
+      <li>
+        <a href="https://www.kubsu.ru/ru/node/2650">
+          Ссылка на фрагмент страницы стороннего сайта
+        </a>
+      </li>
+
+      <li>
+        <p>
+          Ссылки из прямоугольных и круглых областей картинки (HTML-тег map):
+          <br>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3m42YJ41qlzt7QSO-iBUMqeB8WJPTEZqIkg&s"
+            alt="Картинка с разными областями"
+            usemap="#map"
+          />
+
+          <map name="map">
+            <!-- <area shape="rect" 
+                    coords="0,0,200,150" 
+                    href="https://ya.ru" > -->
+            <area shape="circle" coords="100,100,150" href="https://ya.ru" />
+            <area shape="rect" coords="250,0,350,150" href="https://ya.ru" />
+          </map>
+        </p>
+      </li>
+      <li><a href=""> Ссылка с пустым href </a></li>
+      <li><a> Ссылка без href </a></li>
+      <li>
+        <a href="/no-follow" rel="nofollow">
+          Ссылка, по которой запрещен переход поисковикам
+        </a>
+      </li>
+      <li>
+        <a href="/no-index" rel="noindex">
+          Запрещенная ссылка для индексации поисковиками
+        </a>
+      </li>
+      <li>
+        Нумерованный список ссылок с подписями title:
+        <ol>
+          <li><a href="/link1"> Ссылка 1 </a></li>
+          <li><a href="/link2"> Ссылка 2 </a></li>
+          <li><a href="/link3"> Ссылка 3 </a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="ftp://user:password@example/file.txt">
+          Ссылка на файл на сервере FTP с авторизацией
+        </a>
+      </li>
+    </ul>
+
+    <h2 id="reee">Форма</h2>
+
+    <form>
+      <label>
+        ФИО: <br />
+        <input  placeholder="Введите ваше ФИО" />
+      </label>
+      <br />
+
+      <label>
+        Номер телефона:
+        <input name="tel" type="tel" placeholder="Введите номер телефона" />
+      </label>
+      <br />
+
+      <label>
+        Email (электронная почта):
+        <input name="email" type="email" placeholder="Введите ваш email" />
+      </label>
+      <br />
+
+      <label>
+        Дата рождения:
+        <input name="date" type="date" />
+      </label>
+      <br />
+
+      <label>
+        Пол:
+        <input name="group-1" type="radio" />
+        Мужской
+      </label>
+
+      <label>
+        <input name="group-1" type="radio" />
+        Женский
+      </label>
+      <br />
+
+      <br />
+
+      <label>
+        <p>
+        Любимый язык программирования: <br />
+        </p>
+        <select name="language[]" multiple>
+          <option selected="selected">Pascal</option>
+          <option>C</option>
+          <option>C++</option>
+          <option>JavaScript</option>
+          <option>PHP</option>
+          <option>Python</option>
+          <option>Java</option>
+          <option>Haskel</option>
+          <option>Clojure</option>
+          <option>Prolog</option>
+          <option>Scala</option>
+          <option>huy</option>
+        </select>
+      </label>
+      <br />
+
+      <label>
+        <p>
+        Биография <br /></p>
+        <textarea name="field-name-3" placeholder="Напишите о себе"> </textarea>
+      </label>
+      <br />
+
+      <label>
+        <input type="checkbox" checked="checked" name="confirm" />
+        С контрактом ознакомлен(а)
+      </label>
+      <br />
+
+      <input type="submit" value="Сохранить" />
+    </form>
+  </body>
+</html>
