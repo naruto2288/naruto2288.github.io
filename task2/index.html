@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo_wrapper">
+            <img class="header__logo" src="image.png" alt="Logo" />
+
+            <h1 class="header__title">Логотип</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            
+        <!-- <aside class="sidebar">
+        </aside> -->
+
+        <div class="main__content">
+
+            <a href="http://www.kubsu.ru/">1) абсолютную гиперссылку на главную страницу сайта kubsu.ru</a>
+            <a href="https://www.kubsu.ru/">2) абсолютную на главную сайта kubsu.ru в протоколе https</a>
+            <a href="https://kubsu.ru">
+                <img src="https://www.kubsu.ru/sites/all/themes/portal_kubsu/logo.png" alt="KUBSU">
+            </a>
+            <a href="https://kubsu.ru/ru/employees">4) сокращенную ссылку на внутреннюю страницу; </a>
+            <a href="http://kubsu.ru">5) сокращенную ссылку на главную страницу;</a>
+            <a href="#anchor">6) ссылку на фрагмент текущей страницы;</a>
+            <a href="https://kubsu.ru/ru/?name=abc&age=18&id=0123">7) ссылку с тремя параметрами в URL; </a>
+            <a href="https://kubsu.ru/ru/?id=0123">8) ссылку с параметром id в URL;</a>
+            <a href="./contacts.html">9) относительную на страницу в текущем каталоге; </a>
+            <a href="./about/info.html">10) относительную на страницу в каталоге about</a>
+            <a href="./../index2.html">11) относительную на страницу в каталоге уровнем выше текущего; </a>
+            <a href="./../../index3.html">12) относительную на страницу в каталоге двумя уровнями выше</a>
+            <p>
+                13) Задание на <a href="#">контекстную ссылку в тексте абзаца</a> - Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Perferendis, perspiciatis!
+            </p>
+            <a href="https://kubsu.ru/ru/employees#block-block-24">14) ссылку на фрагмент страницы стороннего сайта;</a>
+
+            <img src="https://www.kubsu.ru/sites/all/themes/portal_kubsu/logo.png" width="350" usemap="#map" width="300"
+                height="300">
+
+            <a href="">16) ссылка с пустым href</a>
+            <a>17) ссылка без href</a>
+
+            <a href="https://ya.ru" rel="nofollow">18) ссылка, по которой запрещен переход поисковикам</a>
+
+            <no-index>
+                <a href="https://google.com">19) ссылка, которую запрещено индексировать поисковиками</a>
+            </no-index>
+
+            <ol>
+                <a href="https://pay.yandex.ru" title="Яндекс Пэй">Ссылка 1</a>
+                <a href="https://google.com" title="Поисковик Гугл">Ссылка 2</a>
+            </ol>
+
+            <a href="ftp://admin:1234@google.com/index.doc">21) ссылка на файл с протоколом ftp</a>
+
+            <div id="anchor">
+                Фрагмент сайта
+            </div>
+
+            <map name="map">
+                <area shape="circle" coords="75,75,75" href="left.html" />
+                <area shape="rect" coords="150,0,250,100" href="right.html" />
+            </map>
+
+            <table>
+                <tr>
+                    <th>Колонка 1</th>
+                    <th>Колонка 2</th>
+                    <th>Колонка 3</th>
+                    <th>Колонка 4</th>
+                </tr>
+                <tr>
+                    <td colspan="2">слово на 2 яч.</td>
+                    
+                    <td>слово</td>
+                    <td>предложение предложение</td>
+                </tr>
+                <tr>
+                    <td>слово</td>
+                    <td>слово</td>
+                    <td></td>
+                    <td rowspan="3">слово</td>
+                </tr>
+                <tr>
+                    <td>слово</td>
+                    <td>слово</td>
+                    <td>слово</td>
+                </tr>
+                <tr>
+                    <td>слово</td>
+                    <td>слово</td>
+                    <td>слово</td>
+                </tr>
+                <tr>
+                    <td>слово</td>
+                    <td>слово</td>
+                    <td>слово</td>
+                    <td>слово</td>
+                </tr>
+            </table>
+
+
+            <div class="task_form">
+                <form>
+                    <label>
+                        ФИО
+                        <input name="fio" type="text">
+                    </label>
+                    <label>
+                        Телефон
+                        <input name="phone" type="tel">
+                    </label>
+                    <label>
+                        Email
+                        <input name="email" type="email">
+                    </label>
+                    <label>
+                        Дата рождения
+                        <input name="date" type="date">
+                    </label>
+                    <label>
+                        Пол
+                        <div class="gender_radio">
+                            М
+                            <input name="pol" type="radio">
+                        </div>
+                        <div class="gender_radio">
+                            Ж
+                            <input name="pol" type="radio">
+                        </div>
+                    </label>
+                    <label>
+                        Любимый язык программирования
+                        <select name="lang[]" multiple>
+                            <option value="1">Pascal</option>
+                            <option value="2">C</option>
+                            <option value="3">C++</option>
+                            <option value="4">JavaScript</option>
+                            <option value="5">PHP</option>
+                            <option value="6">Python</option>
+                            <option value="7">Java</option>
+                            <option value="8">Haskel</option>
+                            <option value="9">Clojure</option>
+                            <option value="10">Prolog</option>
+                            <option value="11">Scala</option>
+                        </select>
+                    </label>
+                    <label>
+                        Биография
+                        <textarea name="biography" id="#textarea"></textarea>
+                    </label>
+                    <label class="checkbox">
+                        С контрактом ознакомлен
+                        <input type="checkbox">
+                    </label>
+                    <button type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer class="footer">
+        (c)
+    </footer>
+
+</body>
+
+
+</html>
