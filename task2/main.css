@@ -63,6 +63,7 @@ main {
     padding-right: 5rem;
 
     display: flex;
+    justify-content: center;
     gap: 1rem;
 
     width: 100%;
@@ -135,4 +136,5 @@ table {
 td, th {
     border: 1px solid black;
     padding: 10px;
+
 }
