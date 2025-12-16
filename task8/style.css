@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Затемнение */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Попап */
+.modal {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Форма */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 8px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.checkbox {
+  font-size: 14px;
+}
+
+.status {
+  font-size: 14px;
+}
+
+/* Мобильные устройства */
+@media (max-height: 700px) {
+  .modal {
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  form {
+    gap: 8px;
+  }
+
+  textarea {
+    height: 60px;
+  }
+}
+
