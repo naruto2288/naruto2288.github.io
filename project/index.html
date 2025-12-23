@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz | Официальный дилер</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-car"></i>
+                Mercedes-Benz
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#models">Модели</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="#about">О компании</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Mercedes-Benz</h1>
+            <p>Более 130 лет инноваций и совершенства. Откройте для себя мир роскоши, технологий и непревзойденного комфорта.</p>
+            <a href="#contact" class="cta-button">Заказать тест-драйв</a>
+        </div>
+    </section>
+
+    <!-- Cars Slider -->
+    <section class="cars-slider">
+        <div class="container">
+            <h2 class="section-title">Новые модели 2023</h2>
+            
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <!-- Слайды будут добавлены через JavaScript -->
+                </div>
+            </div>
+            
+            <div class="slider-nav">
+                <button class="slider-btn" id="prevBtn">← Назад</button>
+                <button class="slider-btn" id="nextBtn">Вперед →</button>
+            </div>
+            
+            <div class="slider-dots" id="sliderDots">
+                <!-- Точки будут добавлены через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Models -->
+    <section class="models" id="models">
+        <div class="container">
+            <h2 class="section-title">Популярные модели</h2>
+            
+            <div class="models-grid">
+                <div class="model-card">
+                    <img src="s-class.jpg" alt="Mercedes S-Class">
+                    <h3>S-Class</h3>
+                    <p>Флагманский седан бизнес-класса с инновационными технологиями и непревзойденным комфортом.</p>
+                </div>
+                
+                <div class="model-card">
+                    <img src="GLE.jpg" alt="Mercedes GLE">
+                    <h3>GLE Coupe</h3>
+                    <p>Спортивный кроссовер с агрессивным дизайном, полным приводом и мощными двигателями.</p>
+                </div>
+                
+                <div class="model-card">
+                    <img src="g-class.jpg" alt="Mercedes G-Class">
+                    <h3>G-Class</h3>
+                    <p>Легендарный внедорожник, сочетающий возможности бездорожья с роскошью премиум-класса.</p>
+                </div>
+                
+                <div class="model-card">
+                    <img src="eqc.jpg" alt="Mercedes EQC">
+                    <h3>EQC</h3>
+                    <p>Электрический кроссовер с запасом хода до 450 км и мгновенным разгоном.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">О компании</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>История совершенства</h3>
+                    <p>Mercedes-Benz — немецкий производитель автомобилей премиум-класса, грузовиков, автобусов. Бренд стал символом качества, инноваций и роскоши.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Основан в 1926 году</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Лидер в автомобильных инновациях</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Более 130 лет опыта</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Автомобили в 100+ странах</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="zavod.jpg" alt="Mercedes-Benz завод">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Заказать тест-драйв</h2>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Ваше имя *</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон *</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="model">Интересующая модель</label>
+                    <select id="model">
+                        <option value="">Выберите модель</option>
+                        <option value="s-class">S-Class</option>
+                        <option value="gle">GLE</option>
+                        <option value="g-class">G-Class</option>
+                        <option value="eqc">EQC</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" placeholder="Ваши пожелания..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Mercedes-Benz</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#models">Модели</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li>Москва, Ленинградский пр-т, 64</li>
+                        <li>+7 (495) 123-45-67</li>
+                        <li>info@mercedes-moscow.ru</li>
+                        <li>Пн-Пт: 9:00-21:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mercedes-Benz. Официальный дилер в Москве.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
