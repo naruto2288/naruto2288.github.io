@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Анкета</h2>
+
+    <form action="submit.php" method="POST">
+
+        <label>ФИО:</label>
+        <input type="text" name="fullname" required>
+
+        <label>Телефон:</label>
+        <input type="tel" name="phone" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Дата рождения:</label>
+        <input type="date" name="birthdate" required>
+
+        <label>Пол:</label>
+        <div class="radio">
+            <input type="radio" name="gender" value="male" required> Мужской
+            <input type="radio" name="gender" value="female"> Женский
+        </div>
+
+        <label>Любимый язык программирования:</label>
+        <select name="languages[]" multiple required>
+            <option value="Pascal">Pascal</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="Haskel">Haskel</option>
+            <option value="Clojure">Clojure</option>
+            <option value="Prolog">Prolog</option>
+            <option value="Scala">Scala</option>
+            <option value="Go">Go</option>
+        </select>
+
+        <label>Биография:</label>
+        <textarea name="bio"></textarea>
+
+        <div class="checkbox">
+            <input type="checkbox" name="contract" required> С контрактом ознакомлен(а)
+        </div>
+
+        <button type="submit">Сохранить</button>
+
+    </form>
+</div>
+
+</body>
+</html>
